@@ -6,7 +6,8 @@ import orderSchema from './models/Order.js'
 import cors from 'cors'
 
 import router from './router.js'
-
+const ler = 20
+//dfg
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log('dbOk'))
