@@ -7,8 +7,7 @@ import cors from 'cors'
 
 import router from './router.js'
 
-const PORT = process.env.PORT || 4040
-const password = process.env.DB_ULR
+const PORT = process.env.PORT || 4444
 
 mongoose
   .connect(process.env.MONGODB_URL)
