@@ -7,10 +7,12 @@ import cors from 'cors'
 
 import router from './router.js'
 
-const PORT = process.env.PORT || 4444
+const PORT = process.env.PORT || 4040
 
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(
+    `mongodb+srv://Admin:${'538967'}@cluster0.rhpul.mongodb.net/?retryWrites=true&w=majority`
+  )
   .then(() => console.log('dbOk'))
   .catch(err => console.log('db error', err))
 
